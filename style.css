@@ -2712,7 +2712,70 @@ section {
     transition: transform .15s;
     opacity: .5;
 }/* ================= MOBILE FIX ================= */
+/* ===========================
+   RESPONSIVE NAVBAR
+=========================== */
 
+.menu-btn{
+    display:none;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,239,249,.1);
+    color:#00eff9;
+    font-size:20px;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    nav{
+        width:95%;
+        left:50%;
+        transform:translateX(-50%);
+        justify-content:space-between;
+        padding:10px 15px;
+    }
+
+    .menu-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#0d0d16;
+        border:1px solid rgba(255,255,255,.08);
+        border-radius:16px;
+        display:none;
+        flex-direction:column;
+        padding:15px 0;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-links a{
+        display:block;
+        padding:15px;
+        font-size:15px;
+    }
+
+    .nav-avatar{
+        margin-right:auto;
+    }
+}
 @media (max-width: 768px) {
 
     html,
@@ -2820,4 +2883,67 @@ section {
         max-width:100%;
         height:auto;
     }
+}
+@media (max-width:768px){
+
+html,body{
+overflow-x:hidden;
+}
+
+.hero{
+padding:120px 20px 70px;
+min-height:100vh;
+}
+
+.hero-content{
+width:100%;
+padding:0;
+}
+
+.glitch-title{
+font-size:52px;
+line-height:1.1;
+letter-spacing:2px;
+}
+
+.hero-role{
+font-size:18px;
+letter-spacing:2px;
+}
+
+.hero-desc{
+font-size:15px;
+width:100%;
+}
+
+.hero-btns{
+flex-direction:column;
+width:100%;
+gap:15px;
+}
+
+.btn{
+width:100%;
+max-width:300px;
+}
+
+.hero-socials{
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.about-grid,
+.projects-grid{
+grid-template-columns:1fr;
+}
+
+.stat-grid{
+grid-template-columns:1fr 1fr;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
 }

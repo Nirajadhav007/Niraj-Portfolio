@@ -386,3 +386,15 @@ window.addEventListener('scroll', () => {
     nav.style.background = 'rgba(10,12,22,.90)';
     lastScroll = currentScroll;
 });
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+    });
+});
