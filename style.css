@@ -2711,4 +2711,113 @@ section {
     z-index: 9998;
     transition: transform .15s;
     opacity: .5;
+}/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav{
+        width:95%;
+        left:50%;
+        transform:translateX(-50%);
+        padding:8px;
+        overflow-x:auto;
+        scrollbar-width:none;
+    }
+
+    nav::-webkit-scrollbar{
+        display:none;
+    }
+
+    .nav-links{
+        gap:0;
+        white-space:nowrap;
+    }
+
+    .nav-links a{
+        font-size:11px;
+        padding:8px 10px;
+    }
+
+    section{
+        width:100%;
+        padding:100px 20px 60px;
+    }
+
+    .hero{
+        min-height:100vh;
+        padding:110px 20px 60px;
+    }
+
+    .hero-content{
+        width:100%;
+        padding:0;
+    }
+
+    .hero-pretitle{
+        font-size:12px;
+        letter-spacing:6px;
+        text-align:center;
+    }
+
+    .glitch-title{
+        font-size:52px;
+        letter-spacing:2px;
+        text-align:center;
+        line-height:1.1;
+    }
+
+    .hero-role{
+        font-size:18px;
+        letter-spacing:2px;
+        text-align:center;
+    }
+
+    .hero-desc{
+        width:100%;
+        font-size:15px;
+        text-align:center;
+    }
+
+    .hero-btns{
+        flex-direction:column;
+        width:100%;
+        gap:15px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:320px;
+    }
+
+    .hero-socials{
+        margin-top:40px;
+        flex-wrap:wrap;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .principle-grid{
+        grid-template-columns:1fr;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
 }
