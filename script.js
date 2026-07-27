@@ -387,14 +387,14 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
+const mobileNav = document.getElementById("nav-links");
 
 menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    mobileNav.classList.toggle("show");
 });
 
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
-        navLinks.classList.remove("show");
+        mobileNav.classList.remove("show");
     });
 });
