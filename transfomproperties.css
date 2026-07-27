@@ -1,0 +1,112 @@
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+  /* .box{
+    width:200px;
+    height:200px;
+    background-color:blue;
+    position:relative;
+    border-radius:50%;
+    animation:Slidein 2s ease infinite alternate;
+}   */
+ /* .box2{
+    width:200px;
+    height:200px;
+    background-color:red;
+    animation:spin 1s linear infinite;
+}  */
+.ball{
+    width:200px;
+    height:200px;
+    background-color:green;
+    position:relative;
+    border-radius:50%;
+    animation:bounce 1s ease infinite alternate;
+}
+.card{
+    width:300px;
+    height:500px;
+    border:1px solid black;
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
+    
+}
+.bg-gradient{
+    width: 300%;
+    height:300%;
+    background:linear-gradient(to right,aqua,yellow);
+    animation:changingbg 1s ease infinite alternate;
+}
+.loader{
+    width:100px;
+    height:100px;
+    border:10px solid lightcyan;
+    border-radius:50%;
+    border-top:10px solid blue;  
+    animation:loader 1s linear infinite;
+}
+  /* @keyframes fade-in{
+    0%{ 
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+       
+    }
+}    */
+/* @keyframes scaling{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(2);
+    }
+} */
+ 
+ /* @keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+      transform:rotate(360deg);
+    }
+}*/
+/* @keyframes  Slidein{
+    0%{
+        left:-1000px;
+    }
+    100%{
+        left:0;
+    }
+} */ 
+ /* @keyframes  bounce{
+    0%{
+        top:0px;
+    }
+    100%{
+        top:200px;
+        box-shadow: 0px 30px 40px black;
+    }
+} */
+ @keyframes changingbg{
+  0%{
+    transform:translate(0px,0px);
+  }
+  100%{
+    transform:translate(-300px,-300px);
+  }
+ }
+@keyframes loader{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}

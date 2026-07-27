@@ -1,0 +1,328 @@
+/* ========================= */
+/* Global Styles */
+/* ========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+/* ========================= */
+/* Navbar */
+/* ========================= */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* position: sticky;
+    top: 0; */
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+
+.brand{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* Navigation Links */
+
+.links ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.links ul li{
+    list-style: none;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: rgb(0,106,255);
+    font-size: 20px;
+    font-weight: 900;
+    padding-inline: 20px;
+}
+
+/* Buttons */
+
+.buttons{
+    display: flex;
+    gap: 35px;
+}
+
+.btnlogin{
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:white;
+    color:#006aff;
+    
+}
+
+.btnsignup{
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+    background-color:#006aff;
+    color:white;
+    
+}
+
+.btnlogin:hover{
+    background-color: rgb(0,106,255);
+    color: white;
+}
+.btnsignup:hover{
+    background-color: rgb(0,106,255);
+    color: white;
+}
+
+.btnlogin:hover{
+    background-color:#006aff;
+    color:white;
+}
+
+.btnsignup:hover{
+    background-color:#0052cc;
+}
+/* Hamburger */
+
+.hamburger{
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+ }
+.card{
+    width:90vw;
+    border:1px solid lightblue;
+    background-color:aliceblue;
+    border-radius:10px;
+    margin:auto;
+    margin-top:100px;
+    padding:20px;
+    display:flex;
+    justify-content:space-around;
+
+
+}
+.card img{
+     height:400px;
+     width:40%;
+}
+#testimonial-body{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:400px;
+}
+#testimonial-heading{
+    font-size:30px;
+    margin-top:20px;
+}
+#testimonial-para{
+    margin-top:13px;
+}
+#testimonial-date{
+    margin-top:13px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #222f3e;
+    padding: 100px 200px;
+}
+
+footer > div > h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer > div > ul > li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+footer > div > ul > li > a{
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 14px;
+}
+.new_card{
+    width:300px;
+    height:400px;
+    border:1px solid lightgray;
+    border-radius:10px;
+    overflow:hidden;
+    
+}
+.new_card>img{
+      width:100%;
+      height:200px;
+    
+}
+.new_card_body{
+    padding:10px;
+    text-align:center;
+   
+}
+.new_card_body>h4{
+   font-size:25px;
+   color:rgba(0,57,164,0.805);
+}
+.new_card_body>p{
+    text-align:justify;
+    font-size:20px;
+    font-weight:600;
+}
+.new_card_body>button{
+    border:none;
+    padding:10px 30px;
+    background-color:rgb(4,121,223);
+    color:white;
+    border-radius:6px;
+    font-size:20px;
+    border:1px solid lightgray;
+    margin-top:20px;
+}
+.cards{
+    display:flex;
+    justify-content:space-around;
+    margin:20px;
+    flex-wrap:wrap;
+}
+.other_blogs_section>h1{
+   text-align:center; 
+   margin-top:100px
+}
+
+/* ========================= */
+/* Tablet View */
+/* ========================= */
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    nav{
+        padding: 15px 20px;
+    }
+
+    .brand{
+        font-size: 22px;
+    }
+
+    .links ul{
+        gap: 15px;
+    }
+
+    .links ul li a{
+        font-size: 16px;
+        padding-inline: 8px;
+    }
+
+    .buttons{
+        gap: 10px;
+    }
+
+    .buttons{
+        padding: 8px 18px;
+        font-size: 16px;
+        border-radius:6px;
+        cursor:pointer;
+
+    }
+.btnlogin{
+    background-color:white;
+    color:#006aff;
+    border:1px solid #006aff;
+}
+
+
+}
+
+/* ========================= */
+/* Mobile View */
+/* ========================= */
+
+@media screen and (max-width:767px){
+
+    nav{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .brand{
+        margin-bottom: 25px;
+    }
+
+    .links ul{
+        flex-direction: column;
+        gap: 12px;
+        margin: 20px 0;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .btnlogin{
+        width: 140px;
+        padding: 10px 20px;
+    }
+    
+    .btnsignuo{
+        width: 140px;
+        padding: 10px 20px;
+    }
+
+/* ========================= */
+/* Mobile View For Card*/
+/* ========================= */
+.card{
+flex-direction:column;
+}
+.card img{
+    width:100%;
+
+}
+#testimonial-body{
+    width:100%;
+    height:100%
+}
+footer{
+    padding: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+footer > div{
+    margin-top: 50px;
+    text-align: center;
+}
+.new_card{
+    margin-top:20px;
+    width:90vw;
+}
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactform.css">
+    <title>Contact Form</title>
+</head>
+<body>
+
+<h1>Contact Form</h1>
+
+<form>
+
+    <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" placeholder="Enter mobile number">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" placeholder="Enter subject">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="5" cols="30" placeholder="Write your message"></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        <label>Gender:</label>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+    </div>
+
+    <br>
+  
+<!--services using checkbox-->
+    <div>
+        <label>Services:</label>
+
+        <input type="checkbox" id="web">
+        <label for="web">Web Development</label>
+
+        <input type="checkbox" id="app">
+        <label for="app">App Development</label>
+
+        <input type="checkbox" id="design">
+        <label for="design">UI/UX</label>
+    </div>
+    <br>
+<!--services using dat-->
+    <div>
+
+      <label for="services">Services Provided:</label>
+
+      <select id="services">
+        <option>WebD</option>
+        <option>AppD</option>
+         <option>UI/UX</option>
+      </select>
+
+      <br> 
+      <br>
+
+      <label for="datapicker:"> Choose Date</label>
+      <input type="date" id="datapicker">
+      
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
+    </div>
+
+</form>
+
+</body>
+</html>
