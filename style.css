@@ -2667,7 +2667,33 @@ section {
     font-family: 'JetBrains Mono', monospace;
     color: #b7b9c8;
 }
+.footer-site{
+    margin-top:12px;
+    display:flex;
+    align-items:center;
+    gap:6px;
 
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:0;
+
+    color:#d1d5db;
+}
+
+.footer-terminal-label{
+    color:#d1d5db;
+}
+
+.footer-terminal-link{
+    color:#d1d5db;
+    text-decoration:none;
+    transition:color .25s ease;
+}
+
+.footer-terminal-link:hover{
+    color:var(--cyan);
+}
 .status-item {
     display: flex;
     align-items: center;
