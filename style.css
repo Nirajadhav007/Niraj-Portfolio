@@ -1659,7 +1659,6 @@ section {
         grid-template-columns: 1fr;
     }
 }
-
 .project-card {
     background: #0f1018;
     border: 1px solid rgba(255, 255, 255, .08);
@@ -1669,10 +1668,10 @@ section {
     box-shadow: 0 15px 35px rgba(0, 0, 0, .35);
     position: relative;
 }
-
 .project-card:hover {
     border-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-8px) scale(1.01);
+    transform: translateY(-10px) scale(1.04) !important;
+    z-index: 5;
 }
 
 .project-card:hover .project-img {
@@ -1950,6 +1949,23 @@ section {
     padding: 28px;
     margin-bottom: 40px;
     border-left: 3px solid var(--cyan);
+    transform: scale(1);
+    transform-origin: center;
+    will-change: transform;
+    transition:
+        transform .4s cubic-bezier(.22,1,.36,1),
+        box-shadow .4s ease,
+        background .4s ease,
+        border-color .4s ease;
+}
+
+.exp-card:hover {
+    transform: translateY(-10px) scale(1.04)  !important;
+    background: rgba(13, 13, 26, 0.96);
+    box-shadow:
+        0 22px 55px rgba(0,0,0,.45),
+        0 0 35px rgba(0,239,249,.25);
+    z-index: 5;
 }
 
 .exp-header {
@@ -3082,5 +3098,20 @@ img{
 max-width:100%;
 height:auto;
 }
+/* Education - Mobile Fix */
+.timeline{
+    padding-left:24px;
+}
 
+.timeline-dot{
+    left:-24px;
+}
+
+.timeline-item{
+    margin-right:0;
+}
+
+.timeline-item:hover{
+    transform:translateY(-6px) scale(1.01) !important;
+}
 }
