@@ -2608,10 +2608,6 @@ section {
     font-size: 14px;
 }
 
-.footer-site {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-}
 
 .footer-col a {
     display: block;
@@ -2667,33 +2663,35 @@ section {
     font-family: 'JetBrains Mono', monospace;
     color: #b7b9c8;
 }
-.footer-site{
-    margin-top:12px;
-    display:flex;
-    align-items:center;
-    gap:6px;
 
-    font-family:'JetBrains Mono', monospace;
-    font-size:13px;
-    font-weight:500;
-    letter-spacing:0;
-
-    color:#d1d5db;
+.footer-site {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin: 18px 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    line-height: 1;
 }
 
-.footer-terminal-label{
-    color:#d1d5db;
+.footer-terminal-label {
+    color: #d1d5db;
+    font-weight: 600;
+    line-height: 1;
 }
 
-.footer-terminal-link{
-    color:#d1d5db;
-    text-decoration:none;
-    transition:color .25s ease;
+.footer-terminal-link {
+    color: var(--cyan);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1;
+    transition: .3s;
 }
 
-.footer-terminal-link:hover{
-    color:var(--cyan);
-}
+.footer-terminal-link:hover {
+    color: var(--yellow);
+} 
+
 .status-item {
     display: flex;
     align-items: center;
